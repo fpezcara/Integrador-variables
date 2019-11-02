@@ -8,6 +8,8 @@ const descuento = "viajamillas";
 let uniProd1 = 0;
 let uniProd2 = 0;
 let cuotas = 0;
+let tarjetaCredito = 0;
+let total1 = 0;
 
 let nombreUsuario = prompt(`¡Bienvenida a ${nombreDeTienda}✈! 
 
@@ -41,25 +43,38 @@ alert(`El detalle de tu compra es:
 
 ${uniProd1} pasajes de avión con destino a ${producto1} = $${uniProd1 * precio1}
 y
-${uniProd2} pasajes de avión con destino a ${producto2} = $${uniProd2 * precio2}.
-
-💲 El total es: $${uniProd1 * precio1 + uniProd2 * precio2}`) ;
-
-(uniProd1 != 0 && uniProd2 == 0) &&
-alert(`El detalle de tu compra es: 
-
-${uniProd1} pasajes de avión con destino a ${producto1} = $${uniProd1 * precio1}
-
-💲 El total es: $${uniProd1 * precio1}`)
-
-(uniProd1 == 0 && uniProd2 != 0) &&
-alert(`El detalle de tu compra es: 
-
 ${uniProd2} pasajes de avión con destino a ${producto2} = $${uniProd2 * precio2}
 
-💲 El total es: $${uniProd2 * precio2}`)
+💲 El total es: $${uniProd1 * precio1 + uniProd2 * precio2}` );
+
+
+// (uniProd1 != 0 && uniProd2 == 0) &&
+// alert(`El detalle de tu compra es: 
+
+// ${uniProd1} pasajes de avión con destino a ${producto1} = $${uniProd1 * precio1}
+
+// 💲 El total es: $${uniProd1 * precio1}`)
+
+// (uniProd1 == 0 && uniProd2 != 0) &&
+// alert(`El detalle de tu compra es: 
+
+// ${uniProd2} pasajes de avión con destino a ${producto2} = $${uniProd2 * precio2}.
+
+// 💲 El total es: $${uniProd2 * precio2}`)
 
 
 // 6. Pregunta si desea abonar con tarjeta de crédito 
+(respuestaUsuario == "si") && (tarjetaCredito = prompt(`¿Desea abonar con tarjeta de crédito?`));
+
+tarjetaCredito == "si" && (cuotas = prompt(`¿En cuántas cuotas desea abonar?`));
+
+let totalFinal = (uniProd1 * precio1 + uniProd2 * precio2);
+(cuotas != 0) && alert(`Deberá abonar ${cuotas} cuotas de $${totalFinal / cuotas}` )
+
+
+
+
+
+
 
 
