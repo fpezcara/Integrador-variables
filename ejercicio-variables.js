@@ -137,7 +137,7 @@ ${unidadesProd2} pasajes de avión con destino a ${producto2} = $${unidadesProd2
 
 Con el 10% de descuento de su cupón. 
 
-Precio Final: $ ${(totalFinal) * 0.9}`)
+Precio Final: $ ${(totalFinal) * 0.1}`)
 
 
 // (unidadesProd1 === 0  && unidadesProd2 !== 0)&&
